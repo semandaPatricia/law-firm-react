@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="overlay"></div>
         <video src={peoples} autoPlay loop muted />
         <div className="content">
-          <h3 className='font-bold'> Dont feel helpless,lets get you justice</h3>
+          <h3 className='font-bold text-3xl  uppercase'> Dont feel helpless,lets get you justice</h3>
           <p className="px-8 mt-8 mb-12 text-lg">Cupiditate minima voluptate temporibus quia? Architecto beatae esse ab amet vero eaque explicabo!</p>
         </div>
     </div>

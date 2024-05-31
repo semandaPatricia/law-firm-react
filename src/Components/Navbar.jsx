@@ -1,57 +1,70 @@
-
-import React from 'react'
-import { GiHamburgerMenu } from 'react-icons/gi';
-//import { MdOutlineRestaurantMenu } from 'react-icons/md';
-import {GoLaw} from 'react-icons/go'
-
+import React, { useState } from 'react';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
+  // State to manage the navbar's visibility
+  const [nav, setNav] = useState(false);
 
-    const [toggleMenu, setToggleMenu] = React.useState(false);
+  // Toggle function to handle the navbar's display
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
+  // Array containing navigation items
+  const navItems = [
+    { id: 1, text: 'Home' },
+    { id: 2, text: 'Company' },
+    { id: 3, text: 'Resources' },
+    { id: 4, text: 'About' },
+    { id: 5, text: 'Contact' },
+  ];
+
   return (
+    <div className='bg-black flex justify-between items-center h-24  px-4 text-white'>
+      {/* Logo */}
+      <h1 className='w-full text-2xl font-bold text-[#00dfba]'>RENA LAW.</h1>
 
-        <nav className='flex justify-center py-2 mx-4 '>
-        <div className="flex lg:flex-1 gap-3 " >
-           <img
-                className="h-20 w-auto"
-                src="https://images.unsplash.com/photo-1590099543482-3b3d3083a474?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=704&q=80"
-                alt="firm-logo"
-              />
-           <h1 className=" font-semibold ">Law firm</h1>
-          </div>
-
-          <ul className="app__navlinks flex  sm:flex items-center space-x-4 ">
-        <li ><a href="#home">Home</a></li>
-        <li ><a href="#practice-areas">Practice Areas</a></li>
-        <li ><a href="#testimonials">Testimonials</a></li>
-        <li ><a href="#blog">Blog</a></li>
-        <li ><a href="#about-us">About us</a></li>
-        <li ><a href="#contact-us">Contact</a></li>
+      {/* Desktop Navigation */}
+      <ul className='hidden md:flex'>
+        {navItems.map(item => (
+          <li
+            key={item.id}
+            className='p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black'
+          >
+            {item.text}
+          </li>
+        ))}
       </ul>
 
-      <div className="app__navbar-smallscreen text-white flex-col">
-        <GiHamburgerMenu  className= 'bg-white'    color="#000000" fontSize={20} onClick={() => setToggleMenu(true)} />
-        
-        {toggleMenu && (
-          <div className="app__navbar-smallscreen_overlay flex-wrap">
-            <GoLaw fontSize={20} className="overlay__close" onClick={() => setToggleMenu(false)} />
-            <ul className="app__navbar-smallscreen_links">
-              <li><a href="#home" onClick={() => setToggleMenu(false)}>Home</a></li>
-              <li><a href="#practice areas" onClick={() => setToggleMenu(false)}>Practice Areas</a></li>
-              <li><a href="#testimonials" onClick={() => setToggleMenu(false)}>Testimonials</a></li>
-              <li><a href="#blog" onClick={() => setToggleMenu(false)}>Blog</a></li>
-              <li><a href="#about" onClick={() => setToggleMenu(false)}>About Us</a></li>
-              <li><a href="#contact" onClick={() => setToggleMenu(false)}>Contact</a></li>
-            </ul>
-          </div>
-        )}
+      {/* Mobile Navigation Icon */}
+      <div onClick={handleNav} className='block md:hidden'>
+        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
-</nav>
 
+      {/* Mobile Navigation Menu */}
+      <ul
+        className={
+          nav
+            ? 'fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500'
+            : 'ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]'
+        }
+      >
+        {/* Mobile Logo */}
+        <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>REACT.</h1>
 
+        {/* Mobile Navigation Items */}
+        {navItems.map(item => (
+          <li
+            key={item.id}
+            className='p-4 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600'
+          >
+            {item.text}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
+export default Navbar;
 
-  )
-}
-
-export default Navbar
