@@ -14,9 +14,9 @@ const Blog = () => {
 
                 <div className="flex flex-col justify-between py-6 lg:mx-6">
                     <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
-                        How to use sticky note for problem solving
+                    Personal Injury Laws 
                     </a>
-                    
+                    <p> There are many, and they are complicated. But that’s why we are here.</p>
                     <span className="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2019</span>
                 </div>
             </div>
@@ -26,8 +26,9 @@ const Blog = () => {
 
                 <div className="flex flex-col justify-between py-6 lg:mx-6">
                     <a href="#" className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
-                        How to use sticky note for problem solving
+                    Car Accident Lawyers
                     </a>
+                    <p> Our experienced car accident lawyers can handle the entire legal process from start to finish. If you are hurting after a car accident, let our lawyers focus on your case so you can focus on your recovery.</p>
 
                     <span className="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2019</span>
                 </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import {GoLaw} from 'react-icons/go'
 
 const Footer = () => {
+	const currentYear = new Date().getFullYear();
   return (
     <footer className=" footer_main px-4 divide-y dark:dark:bg-gray-800 dark:dark:text-gray-100">
 	<div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
@@ -78,7 +79,7 @@ const Footer = () => {
 			</div>
 		</div>
 	</div>
-	<div className="py-6 text-sm text-center dark:dark:text-gray-400">© 2023 Company Co. All rights reserved.</div>
+	<div className="py-6 text-sm text-center dark:dark:text-gray-400">&copy; {currentYear}  Rena Co. All rights reserved.</div>
 </footer>
   )
 }

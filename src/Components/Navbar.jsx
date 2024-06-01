@@ -13,8 +13,8 @@ const Navbar = () => {
   // Array containing navigation items
   const navItems = [
     { id: 1, text: 'Home' },
-    { id: 2, text: 'Company' },
-    { id: 3, text: 'Resources' },
+    { id: 2, text: ' Team' },
+    { id: 3, text: 'Services' },
     { id: 4, text: 'About' },
     { id: 5, text: 'Contact' },
   ];
@@ -50,7 +50,7 @@ const Navbar = () => {
         }
       >
         {/* Mobile Logo */}
-        <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>REACT.</h1>
+        <h1 className='w-full text-xl font-bold text-[#00df9a] m-4'>BUKENYA LAW</h1>
 
         {/* Mobile Navigation Items */}
         {navItems.map(item => (

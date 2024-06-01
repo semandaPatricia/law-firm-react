@@ -5,35 +5,36 @@ import Navbar from './Components/Navbar'
 import './index.css'
 import './app.css'
 
-
-
-import ContactUs from './Components/ContactUs';
 import Blog from './Components/Blog';
-import Testimonials from './Components/Testimonials'
-import PracticeArea from './Components/PracticeArea'
+//import Testimonials from './Components/Testimonials'
+
 import Footer from './Components/Footer';
 import Aboutsection from './Components/Aboutsection';
 import { Herosection } from './Components/Herosection';
-//import Hero from "./Components/Hero";
+import Feature from './Components/Feature';
+import Services from './Components/Services';
+import Contact from './Components/Contact';
+import Team from './Components/Team';
+
 
 
 function App() {
-
-
-  return (
-
-     
-   <div >
+return (
+<div >
     <Navbar />
       
      <Herosection/>
       
       <Aboutsection/>
-  <PracticeArea/>
-      <Testimonials/>
       
-      <ContactUs/>
+  <Services/>
+  <Feature/>
+  <Team/>
+      
+      
+      
         <Blog/>
+        <Contact/>
         <Footer/>
      
         </div>

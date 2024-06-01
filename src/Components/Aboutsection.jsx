@@ -14,14 +14,19 @@ const Aboutsection = () => {
         </div>
   
         <div className="lg:py-24">
-          <h2 className="text-3xl font-bold sm:text-4xl">About Us</h2>
+          <h2 className="text-3xl font-bold sm:text-4xl">About the firm</h2>
   
           <p className="mt-4">
-          Founded in 2008, Our Agency has over 20 lawyers
-far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+          The Firm was created in 2009 as an independent team of legal experts to comprehensively resolve legal issues in the interests of large businesses.
+
           </p>
           <br></br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate voluptas quaerat ullam, molestias sed exercitationem obcaecati saepe atque accusamus.</p>
+          <p>Both large and small enterprises use our help, and accounting offices and human resources
+             departments also consult on legal aspects. In all areas that connect employer and employee, 
+             questions and difficulties may 
+            arise to which labor law has answers. And our team  knows where to look for them.</p>
+            <br></br>
+            <p>Over the years of practice, we have learned to calculate the moves of our opponents, act proactively and, as a result, comprehensively solve the task. A creative approach to providing legal assistance is at the core of our philosophy and is a tool for resolving even the most hopeless disputes.</p>
   
         </div>
       </div>
