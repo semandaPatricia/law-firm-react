@@ -3,7 +3,8 @@
 import React from 'react';
 import Navbar from './Components/Navbar'
 import './index.css'
-import './app.css'
+import './app.css';
+
 
 import Blog from './Components/Blog';
 //import Testimonials from './Components/Testimonials'
