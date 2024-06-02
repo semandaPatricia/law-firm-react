@@ -2,7 +2,7 @@ import React from "react";
 
 const Team = () => {
   return (
-    <section id="our-team" classname="bg-gray-100 py-32 mt-6">
+    <section id="our-team" classname="bg-gray-100 py-32 mt-10 mb-10">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-8 text-primary">
           Meet Our  Legal Team

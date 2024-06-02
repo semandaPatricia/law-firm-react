@@ -9,9 +9,10 @@ const Footer = () => {
 		<div className="lg:w-1/3">
 			<a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
 				<div className="flex items-center justify-center w-12 h-12 rounded-full dark:dark:bg-violet-400">
-					<GoLaw fontSize={20}/>
+					<img src="/logo3.svg" alt="" srcset="" />
+					
 				</div>
-				<span className="self-center text-2xl font-semibold">Law firm</span>
+				<span className="self-center text-2xl font-semibold">B & C  Advocates</span>
 			</a>
 		</div>
 		<div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
@@ -79,7 +80,7 @@ const Footer = () => {
 			</div>
 		</div>
 	</div>
-	<div className="py-6 text-sm text-center dark:dark:text-gray-400">&copy; {currentYear}  Rena Co. All rights reserved.</div>
+	<div className="py-6 text-sm text-center dark:dark:text-gray-400">&copy; {currentYear}  B & C  All rights reserved.</div>
 </footer>
   )
 }

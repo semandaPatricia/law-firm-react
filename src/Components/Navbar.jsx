@@ -21,9 +21,11 @@ const Navbar = () => {
 
   return (
     <div className='bg-black flex justify-between items-center h-24  px-4 text-white'>
-      {/* Logo */}
-      <h1 className='w-full text-2xl font-bold text-[#00dfba]'>RENA LAW.</h1>
-
+      {/* Logo  text-[#00dfba]*/}
+      
+      <img src="/logo3.svg" alt="" width={25} />
+      <h1 className='w-full text-md font-semibold ml-2 '>Bukenya,Chemonges & Co.</h1>
+      
       {/* Desktop Navigation */}
       <ul className='hidden md:flex'>
         {navItems.map(item => (

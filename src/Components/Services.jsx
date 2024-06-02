@@ -14,7 +14,7 @@ const Services = () => {
     
     <section className="p-2 mt-4 mb-8">
       <div className="items-center flex justify-center">
-      <h1 className="text-4xl font-extrabold ml-20 "> Services</h1>
+      <h1 className="text-3xl font-bold mb-10 "> Services</h1>
       </div>
       
       <div className="flex flex-col lg:flex-row h-fit min-w-full lg:h-[670px]  w-full max-w-6xl mx-auto shadow overflow-hidden">
